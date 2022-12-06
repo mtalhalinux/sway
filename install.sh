@@ -29,6 +29,7 @@ printf 'y' |sudo apt autoremove
 printf 'y' |sudo apt update
 
 echo "Installing ly display manager"
+sudo apt install build-essential libpam0g-dev libxcb-xkb-dev
 git clone --recurse-submodules https://github.com/fairyglade/ly
 cd ly
 make
