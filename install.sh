@@ -19,6 +19,7 @@ printf 'y' |sudo apt install lxappearance
 printf 'y' |sudo apt install neofetch
 printf 'y' |sudo apt install  volumeicon-alsa
 printf 'y' |sudo apt install galculator
+printf 'y' |sudo apt install feh
 
 echo "Installing sway"
 printf 'y' |sudo apt install sway
