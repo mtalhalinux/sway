@@ -22,6 +22,8 @@ printf 'y' |sudo apt install galculator
 
 echo "Installing sway"
 printf 'y' |sudo apt install sway
+printf 'y' |sudo apt install wofi
+printf 'y' |sudo apt install waybar
 
 echo "Removing bloatwares"
 printf 'y' |sudo apt autoclean 
