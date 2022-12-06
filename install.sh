@@ -22,3 +22,11 @@ printf 'y' |sudo apt install galculator
 printf 'y' |sudo apt autoclean 
 printf 'y' |sudo apt autoremove
 printf 'y' |sudo apt update
+
+echo "Installing ly display manager"
+git clone --recurse-submodules https://github.com/fairyglade/ly
+cd ly
+make
+make install installsystemd
+sudo systemctl enable ly.service
+
