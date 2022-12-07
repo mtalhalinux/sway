@@ -1,6 +1,8 @@
 #!/bin/sh
 
-sudo apt -y update 
+sudo apt -y update
+
+echo "Installing base needed packages"
 sudo apt -y install xorg
 sudo apt -y install pulseaudio
 sudo apt -y install alsa-utils
