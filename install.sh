@@ -25,7 +25,7 @@ sudo apt -y install vlc
 sudo apt -y install xarchiver
 sudo apt -y install gparted
 sudo apt -y install gnome-calculator
-sudo apt -y installttf-font-awesome
+sudo apt -y install ttf-font-awesome
 
 echo "Installing sway"
 sudo apt -y install sway
