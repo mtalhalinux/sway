@@ -48,8 +48,13 @@ sudo systemctl enable ly.service
 
 echo "Installing compton of dual kawase"
 https://github.com/tryone144/compton.git
+cd compton
 make
 make docs
 make install
 cd ../
+
+echo "Now to copying config files"
+
+
 
