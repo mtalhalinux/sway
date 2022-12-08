@@ -8,7 +8,7 @@ sudo apt -y install pulseaudio
 sudo apt -y install alsa-utils
 sudo apt -y install pavucontrol
 sudo apt -y install kitty
-sudo apt -y install network-manager-gnome
+sudo apt -y install nm-applet
 sudo apt -y install arandr
 sudo apt -y install geeqie
 sudo apt -y install wget
