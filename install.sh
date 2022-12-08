@@ -29,7 +29,7 @@ sudo apt -y install ttf-font-awesome
 
 echo "Installing sway"
 sudo apt -y install sway
-sudo apt -y install wofi
+sudo apt -y install rofi
 sudo apt -y install waybar
 
 echo "Removing bloatwares"
