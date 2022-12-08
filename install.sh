@@ -24,7 +24,9 @@ sudo apt -y install feh
 sudo apt -y install firefox-esr
 sudo apt -y install pcmanfm
 sudo apt -y install vlc
-
+sudo apt -y install xarchiver
+sudo apt -y install gparted
+sudo apt -y install gnome-calculator
 
 echo "Installing sway"
 sudo apt -y install sway
