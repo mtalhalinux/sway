@@ -7,8 +7,6 @@ sudo apt -y install xorg
 sudo apt -y install pulseaudio
 sudo apt -y install alsa-utils
 sudo apt -y install pavucontrol
-sudo apt -y install compton
-sudo apt -y install picom
 sudo apt -y install kitty
 sudo apt -y install network-manager-gnome
 sudo apt -y install arandr
@@ -44,5 +42,13 @@ git clone --recurse-submodules https://github.com/fairyglade/ly
 cd ly
 make
 make install installsystemd
+cd ../
 sudo systemctl enable ly.service
+
+echo "Installing compton of dual kawase"
+https://github.com/tryone144/compton.git
+make
+make docs
+make install
+cd ../
 
