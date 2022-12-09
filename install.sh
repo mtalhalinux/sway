@@ -60,6 +60,7 @@ cd ../
 
 echo "Now copying config files"
 # For rofi
+mkdir -p ~/.local/share/rofi/themes/
 cd themes
 
 
