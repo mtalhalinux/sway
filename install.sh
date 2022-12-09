@@ -59,7 +59,7 @@ make install
 cd ../
 
 echo "Now copying config files"
-
-
+# For rofi
+cd themes
 
 
