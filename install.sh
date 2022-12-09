@@ -58,7 +58,8 @@ make docs
 make install
 cd ../
 
-echo "Now to copying config files"
+echo "Now copying config files"
+
 
 
 
