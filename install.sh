@@ -60,7 +60,7 @@ cd ../
 
 echo "Now copying config files"
 # For rofi
-mkdir -p ~/.local/share/rofi/themes/
-cd themes
-
+sudo mkdir -p ~/.local/share/rofi/themes/
+cd rofi
+sudo cp rofi/spotlight-dark.rasi ~/.local/share/rofi/themes/
 
