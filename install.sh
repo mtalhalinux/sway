@@ -34,7 +34,7 @@ sudo dpkg -i freedownloadmanager.deb
 echo "Installing sway"
 sudo apt -y install sway
 sudo apt -y install rofi
-sudo apt -y install waybar
+sudo apt -y install polybar
 
 echo "Removing bloatwares"
 sudo apt -y autoclean 
@@ -59,8 +59,21 @@ make install
 cd ../
 
 echo "Now copying config files"
-# For rofi
+
+echo " For rofi"
 sudo mkdir -p ~/.local/share/rofi/themes/
 cd rofi
 sudo cp rofi/spotlight-dark.rasi ~/.local/share/rofi/themes/
+echo "Done"
 
+echo "For polybar"
+sudo cp polybar ~/.config
+echo "Done"
+
+echo "For sway"
+sudo cp sway ~/.config
+echo "Done"
+
+echo "For compton"
+sudo cp compton ~/.config
+echo "done"
