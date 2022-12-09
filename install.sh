@@ -27,6 +27,10 @@ sudo apt -y install gparted
 sudo apt -y install gnome-calculator
 sudo apt -y install ttf-font-awesome
 
+echo "Installing free download manager"
+wget https://dn3.freedownloadmanager.org/6/latest/freedownloadmanager.deb
+sudo dpkg -i freedownloadmanager.deb
+
 echo "Installing sway"
 sudo apt -y install sway
 sudo apt -y install rofi
