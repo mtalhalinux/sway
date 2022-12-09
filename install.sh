@@ -35,6 +35,7 @@ echo "Installing sway"
 sudo apt -y install sway
 sudo apt -y install rofi
 sudo apt -y install polybar
+sudo apt -y install dmenu
 
 echo "Removing bloatwares"
 sudo apt -y autoclean 
