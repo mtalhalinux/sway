@@ -64,17 +64,17 @@ echo "Now copying config files"
 echo " For rofi"
 sudo mkdir -p ~/.local/share/rofi/themes/
 cd rofi
-sudo cp rofi/spotlight-dark.rasi ~/.local/share/rofi/themes/
+cp rofi/spotlight-dark.rasi ~/.local/share/rofi/themes/
 echo "Done"
 
 echo "For polybar"
-sudo cp polybar /home/"$USER"/.config
+cp -r polybar /home/"$USER"/.config
 echo "Done"
 
 echo "For sway"
-sudo cp sway /home/"$USER"/.config
+cp -r sway /home/"$USER"/.config
 echo "Done"
 
 echo "For compton"
-sudo cp compton /home/"$USER"/.config
+cp -r compton /home/"$USER"/.config
 echo "done"
