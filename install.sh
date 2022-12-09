@@ -68,13 +68,13 @@ sudo cp rofi/spotlight-dark.rasi ~/.local/share/rofi/themes/
 echo "Done"
 
 echo "For polybar"
-sudo cp polybar ~/.config
+sudo cp polybar /home/"$USER"/.config
 echo "Done"
 
 echo "For sway"
-sudo cp sway ~/.config
+sudo cp sway /home/"$USER"/.config
 echo "Done"
 
 echo "For compton"
-sudo cp compton ~/.config
+sudo cp compton /home/"$USER"/.config
 echo "done"
