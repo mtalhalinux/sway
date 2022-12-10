@@ -91,5 +91,9 @@ echo "wait..........."
 cd ../
 cd icons
 sudo cp Ice /usr/share/icons
+echo "error occur in applying themes and icons"
+echo "you need to manually apply themes and icons from lxappearence"
+echo "thanks for using my script"
+echo "now you can reboot"
 
 
