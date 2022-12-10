@@ -78,3 +78,7 @@ echo "Done"
 echo "For compton"
 cp -r compton /home/"$USER"/.config
 echo "done"
+
+echo "Extracting theme and icon"
+tar -xvf icethemeicon.tar
+echo "Done"
