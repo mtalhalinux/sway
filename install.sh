@@ -80,5 +80,16 @@ cp -r compton /home/"$USER"/.config
 echo "done"
 
 echo "Extracting theme and icon"
-tar -xvf icethemeicon.tar
+tar -xvf Ice.tar
 echo "Done"
+
+echo "trying to install themes and icons"
+cd Ice
+cd themes
+sudo cp Ice /usr/share/themes
+echo "wait..........."
+cd ../
+cd icons
+sudo cp Ice /usr/share/icons
+
+
