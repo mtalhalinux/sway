@@ -18,82 +18,35 @@ sudo apt -y install lxappearance
 sudo apt -y install neofetch
 sudo apt -y install volumeicon-alsa
 sudo apt -y install galculator
-sudo apt -y install feh
+sudo apt -y install nitrogen
 sudo apt -y install firefox-esr
 sudo apt -y install pcmanfm
 sudo apt -y install vlc
 sudo apt -y install xarchiver
 sudo apt -y install gparted
-sudo apt -y install gnome-calculator
 sudo apt -y install ttf-font-awesome
+
 
 echo "Installing free download manager"
 wget https://dn3.freedownloadmanager.org/6/latest/freedownloadmanager.deb
 sudo dpkg -i freedownloadmanager.deb
 
 echo "Installing sway"
-sudo apt -y install sway
+
 sudo apt -y install rofi
 sudo apt -y install polybar
-sudo apt -y install dmenu
+
 
 echo "Removing bloatwares"
 sudo apt -y autoclean 
 sudo apt -y autoremove
-sudo apt -y update
-
-echo "Installing ly display manager"
-sudo apt install build-essential libpam0g-dev libxcb-xkb-dev
-git clone --recurse-submodules https://github.com/fairyglade/ly
-cd ly
-make
-make install installsystemd
-cd ../
-sudo systemctl enable ly.service
-
-echo "Installing compton of dual kawase"
-https://github.com/tryone144/compton.git
-cd compton
-make
-make docs
-make install
-cd ../
-
-echo "Now copying config files"
-
-echo " For rofi"
-sudo mkdir -p ~/.local/share/rofi/themes/
-cd rofi
-cp rofi/spotlight-dark.rasi ~/.local/share/rofi/themes/
-echo "Done"
-
-echo "For polybar"
-cp -r polybar /home/"$USER"/.config
-echo "Done"
-
-echo "For sway"
-cp -r sway /home/"$USER"/.config
-echo "Done"
-
-echo "For compton"
-cp -r compton /home/"$USER"/.config
-echo "done"
-
-echo "Extracting theme and icon"
-tar -xvf Ice.tar
-echo "Done"
-
-echo "trying to install themes and icons"
-cd Ice
-cd themes
-sudo cp Ice /usr/share/themes
-echo "wait..........."
-cd ../
-cd icons
-sudo cp Ice /usr/share/icons
-echo "error occur in applying themes and icons"
-echo "you need to manually apply themes and icons from lxappearence"
-echo "thanks for using my script"
-echo "now you can reboot"
 
 
+
+sudo apt -y apt install meson dh-autoreconf libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev libxcb-shape0 libxcb-shape0-dev
+git clone https://github.com/Airblader/i3 i3-gaps
+cd i3-gaps
+mkdir -p build && cd build
+meson --prefix /usr/local
+ninja
+sudo ninja install
