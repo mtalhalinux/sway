@@ -27,9 +27,6 @@ sudo apt -y install gparted
 sudo apt -y install ttf-font-awesome
 sudo apt -y install vim
 
-echo "Installing free download manager"
-wget https://dn3.freedownloadmanager.org/6/latest/freedownloadmanager.deb
-sudo dpkg -i freedownloadmanager.deb
 
 echo "Installing sway"
 
