@@ -3,7 +3,6 @@
 sudo apt -y update
 
 echo "Installing base needed packages"
-sudo apt -y install xorg
 sudo apt -y install pulseaudio
 sudo apt -y install alsa-utils
 sudo apt -y install pavucontrol
@@ -29,7 +28,6 @@ sudo apt -y install vim
 
 
 echo "Installing sway"
-
 sudo apt -y install rofi
 sudo apt -y install polybar
 
